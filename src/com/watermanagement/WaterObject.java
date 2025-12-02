@@ -5,6 +5,7 @@ public class WaterObject {
     private int id;
     private String name;
     private String type;
+
     // КОНСТРУКТОР (способ создания объекта)
     public WaterObject(int id, String name, String type) {
         this.id=id;
@@ -30,4 +31,14 @@ public class WaterObject {
     public void setType(String type) {
         this.type = type;
     }
+
+    //Тест бизнес метода
+    public boolean isPumpingStation(){
+        return "насосная станция".equals(type);
+    }
+    //Тест бизнес метода2
+    public boolean isReservoir(){
+        return "резервуар".equals(type);
+    }
+
 }
